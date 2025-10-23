@@ -1,7 +1,12 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
 
-// https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    tailwindcss(),
+  ],
+  server: {
+    host: '0.0.0.0', // acceso desde otras PCs
+    port: 3000       // 🚀 cambia a otro puerto que no sea 8080
+  }
 })
