@@ -7,6 +7,6 @@ export default defineConfig({
   ],
   server: {
     host: '0.0.0.0', // acceso desde otras PCs
-    port: 3000       // 🚀 cambia a otro puerto que no sea 8080
+    port: 3000     // 🚀 cambia a otro puerto que no sea 8080
   }
 })
